@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "name": "Chris T",
+      "email": "chris@mail.com",
+      "appid": "1"
+    },
+    {
+      "name": "Chris T Patch",
+      "appid": "2"
+    }
+  ],
+  "cards": [
+    {
+      "number": "621111",
+      "appid": "1",
+      "id": "01"
+    },
+    {
+      "number": "621112",
+      "appid": "2",
+      "id": "02"
+    },
+    {
+      "number": "621113",
+      "appid": "3",
+      "id": "03"
+    },
+    {
+      "number": "621114",
+      "appid": "4",
+      "id": "04"
+    }
+  ],
+  "loans": [
+    {
+      "number": "621111",
+      "amount": 4001,
+      "id": 1
+    },
+    {
+      "number": "621112",
+      "amount": 4001,
+      "id": "2"
+    },
+    {
+      "number": "621114",
+      "amount": 4004,
+      "id": "Zg-M1EP"
+    }
+  ],
+  "profile": {
+    "name": "Chris Ts 2",
+    "gender": "M"
+  }
+}

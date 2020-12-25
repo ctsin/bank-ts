@@ -1,0 +1,57 @@
+{
+  "name": "dbnk",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "all:server": "concurrently \"yarn:server\" \"yarn:ios:wait\"  \"yarn:android:wait\" ",
+    "ios:server": "concurrently \"yarn:server\" \"yarn:ios:wait\"",
+    "android:server": "concurrently \"yarn:server\" \"yarn:android:wait\"",
+    "ios:wait": "wait-on http://localhost:3000 && yarn ios",
+    "android:wait": "wait-on http://localhost:3000 && yarn android",
+    "server": "json-server api/db.json -c api/json-server.json -r api/routes.json",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-native": "0.63.3",
+    "react-query": "^3.5.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "@types/faker": "^5.1.5",
+    "@types/jest": "^25.2.3",
+    "@types/react-native": "^0.63.2",
+    "@types/react-test-renderer": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-jest": "^25.1.0",
+    "concurrently": "^5.3.0",
+    "eslint": "^6.5.1",
+    "faker": "^5.1.0",
+    "jest": "^25.1.0",
+    "json-server": "^0.16.3",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "miragejs": "^0.1.41",
+    "raven": "^2.6.4",
+    "react-test-renderer": "16.13.1",
+    "typescript": "^3.8.3",
+    "wait-on": "^5.2.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
