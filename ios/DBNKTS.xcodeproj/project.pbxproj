@@ -20,6 +20,14 @@
 		A502CC7828548370B7F2A3AC /* libPods-DBNKTS-DBNKTSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E89F34B592E1BB0C9679B781 /* libPods-DBNKTS-DBNKTSTests.a */; };
 		BC432CDF55D354311F1CBE7D /* libPods-DBNKTS-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EFEDCEF4A394FFC416B368 /* libPods-DBNKTS-tvOS.a */; };
 		E42CF683722D110378DB6366 /* libPods-DBNKTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D8F6679E48538573005812 /* libPods-DBNKTS.a */; };
+		E9AA83F50B3A4CD0A8888D4C /* BigShouldersStencilText-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C12E01EF3DFC420C9536B68E /* BigShouldersStencilText-Black.ttf */; };
+		DFBC4DF780FF4B81A98771C7 /* BigShouldersStencilText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 117F44A9B3734C08BEB0FC0D /* BigShouldersStencilText-Bold.ttf */; };
+		9B031A8A200249CE9A003317 /* BigShouldersStencilText-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D94DC17D7114C13B0307EDE /* BigShouldersStencilText-ExtraBold.ttf */; };
+		69990423520F4D06B770226E /* BigShouldersStencilText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F741F231EF445A8BF98875A /* BigShouldersStencilText-Light.ttf */; };
+		D312F51AEA5E4448BB3FA6D5 /* BigShouldersStencilText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63D84CB9E344478F8FD437C7 /* BigShouldersStencilText-Medium.ttf */; };
+		B6A910513C3241BAADC4DFA9 /* BigShouldersStencilText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBA4B477A300440D8691573F /* BigShouldersStencilText-Regular.ttf */; };
+		9508E342D9B34FF6B3A2EC1F /* BigShouldersStencilText-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBBA2AE41212461C93697A7C /* BigShouldersStencilText-SemiBold.ttf */; };
+		160D58A7958347458167AC22 /* BigShouldersStencilText-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69D3D4BA23F24244BCA834A1 /* BigShouldersStencilText-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +75,14 @@
 		E9F4ECDF1199CD9F783F766F /* Pods-DBNKTS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBNKTS.release.xcconfig"; path = "Target Support Files/Pods-DBNKTS/Pods-DBNKTS.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		C12E01EF3DFC420C9536B68E /* BigShouldersStencilText-Black.ttf */ = {isa = PBXFileReference; name = "BigShouldersStencilText-Black.ttf"; path = "../assets/fonts/BigShouldersStencilText-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		117F44A9B3734C08BEB0FC0D /* BigShouldersStencilText-Bold.ttf */ = {isa = PBXFileReference; name = "BigShouldersStencilText-Bold.ttf"; path = "../assets/fonts/BigShouldersStencilText-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5D94DC17D7114C13B0307EDE /* BigShouldersStencilText-ExtraBold.ttf */ = {isa = PBXFileReference; name = "BigShouldersStencilText-ExtraBold.ttf"; path = "../assets/fonts/BigShouldersStencilText-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0F741F231EF445A8BF98875A /* BigShouldersStencilText-Light.ttf */ = {isa = PBXFileReference; name = "BigShouldersStencilText-Light.ttf"; path = "../assets/fonts/BigShouldersStencilText-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		63D84CB9E344478F8FD437C7 /* BigShouldersStencilText-Medium.ttf */ = {isa = PBXFileReference; name = "BigShouldersStencilText-Medium.ttf"; path = "../assets/fonts/BigShouldersStencilText-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EBA4B477A300440D8691573F /* BigShouldersStencilText-Regular.ttf */ = {isa = PBXFileReference; name = "BigShouldersStencilText-Regular.ttf"; path = "../assets/fonts/BigShouldersStencilText-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BBBA2AE41212461C93697A7C /* BigShouldersStencilText-SemiBold.ttf */ = {isa = PBXFileReference; name = "BigShouldersStencilText-SemiBold.ttf"; path = "../assets/fonts/BigShouldersStencilText-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		69D3D4BA23F24244BCA834A1 /* BigShouldersStencilText-Thin.ttf */ = {isa = PBXFileReference; name = "BigShouldersStencilText-Thin.ttf"; path = "../assets/fonts/BigShouldersStencilText-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +197,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				01CED78754F9D633D20E1671 /* Pods */,
+				D41AE7837B104B608CD2B1E6 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +214,22 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		D41AE7837B104B608CD2B1E6 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				C12E01EF3DFC420C9536B68E /* BigShouldersStencilText-Black.ttf */,
+				117F44A9B3734C08BEB0FC0D /* BigShouldersStencilText-Bold.ttf */,
+				5D94DC17D7114C13B0307EDE /* BigShouldersStencilText-ExtraBold.ttf */,
+				0F741F231EF445A8BF98875A /* BigShouldersStencilText-Light.ttf */,
+				63D84CB9E344478F8FD437C7 /* BigShouldersStencilText-Medium.ttf */,
+				EBA4B477A300440D8691573F /* BigShouldersStencilText-Regular.ttf */,
+				BBBA2AE41212461C93697A7C /* BigShouldersStencilText-SemiBold.ttf */,
+				69D3D4BA23F24244BCA834A1 /* BigShouldersStencilText-Thin.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -342,6 +375,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				E9AA83F50B3A4CD0A8888D4C /* BigShouldersStencilText-Black.ttf in Resources */,
+				DFBC4DF780FF4B81A98771C7 /* BigShouldersStencilText-Bold.ttf in Resources */,
+				9B031A8A200249CE9A003317 /* BigShouldersStencilText-ExtraBold.ttf in Resources */,
+				69990423520F4D06B770226E /* BigShouldersStencilText-Light.ttf in Resources */,
+				D312F51AEA5E4448BB3FA6D5 /* BigShouldersStencilText-Medium.ttf in Resources */,
+				B6A910513C3241BAADC4DFA9 /* BigShouldersStencilText-Regular.ttf in Resources */,
+				9508E342D9B34FF6B3A2EC1F /* BigShouldersStencilText-SemiBold.ttf in Resources */,
+				160D58A7958347458167AC22 /* BigShouldersStencilText-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

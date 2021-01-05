@@ -1,5 +1,5 @@
 import React from 'react';
-import {LogBox, SafeAreaView, Text} from 'react-native';
+import {LogBox, SafeAreaView, StyleSheet, Text} from 'react-native';
 
 import type {Users} from './src/model/user';
 
@@ -17,7 +17,7 @@ const UserList = () => {
   return (
     <SafeAreaView>
       {(data as Users).map(({name, email, appid}) => (
-        <Text key={name + email}>
+        <Text style={styles.google} key={name + email}>
           My name is {name} with email {email}, and appid - {appid}
         </Text>
       ))}
@@ -29,5 +29,11 @@ const App = () => (
     <UserList />
   </QueryClientProvider>
 );
+
+const styles = StyleSheet.create({
+  google: {
+    fontFamily: 'Big Shoulders Stencil Text',
+  },
+});
 
 export default App;
