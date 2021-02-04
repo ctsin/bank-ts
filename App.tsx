@@ -1,26 +1,60 @@
-import React from 'react';
-import {LogBox, SafeAreaView, StyleSheet, Text} from 'react-native';
+import React, {useRef} from 'react';
+import {Animated, LogBox, SafeAreaView, StyleSheet, Text} from 'react-native';
 
-import type {Users} from './src/model/user';
-
-import {QueryClient, QueryClientProvider, useQuery} from 'react-query';
+import {QueryClient, QueryClientProvider} from 'react-query';
 
 LogBox.ignoreLogs(['Setting a timer']);
 
 const queryClient = new QueryClient();
 
 const UserList = () => {
-  const {data = []} = useQuery('usersData', () =>
-    fetch('http://localhost:3000/users/').then((res) => res.json()),
-  );
+  const Y = useRef(new Animated.Value(0)).current;
+
+  const inputRange = [-10, 0, 10];
 
   return (
-    <SafeAreaView>
-      {(data as Users).map(({name, email, appid}) => (
-        <Text style={styles.google} key={name + email}>
-          My name is {name} with email {email}, and appid - {appid}
-        </Text>
-      ))}
+    <SafeAreaView style={styles.container}>
+      <Animated.ScrollView
+        contentContainerStyle={styles.scrollView}
+        onScroll={Animated.event(
+          [
+            {
+              nativeEvent: {
+                contentOffset: {
+                  y: Y,
+                },
+              },
+            },
+          ],
+          {
+            useNativeDriver: true,
+          },
+        )}>
+        <Animated.View
+          style={[
+            styles.hint,
+            {
+              opacity: Y.interpolate({
+                inputRange,
+                outputRange: [0.4, 1, 0.4],
+                extrapolate: 'clamp',
+              }),
+            },
+            {
+              transform: [
+                {
+                  translateY: Y.interpolate({
+                    inputRange,
+                    outputRange: [20, 0, -20],
+                    extrapolate: 'clamp',
+                  }),
+                },
+              ],
+            },
+          ]}>
+          <Text style={styles.fontFamily}>Activated</Text>
+        </Animated.View>
+      </Animated.ScrollView>
     </SafeAreaView>
   );
 };
@@ -31,8 +65,22 @@ const App = () => (
 );
 
 const styles = StyleSheet.create({
-  google: {
+  fontFamily: {
     fontFamily: 'Big Shoulders Stencil Text',
+  },
+  container: {
+    flex: 1,
+  },
+  scrollView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  hint: {
+    borderColor: 'red',
+    borderWidth: StyleSheet.hairlineWidth,
+    padding: 10,
+    borderRadius: 5,
   },
 });
 
