@@ -1,6 +1,10 @@
 import React, {useRef} from 'react';
 import {Animated, LogBox, SafeAreaView, StyleSheet, Text} from 'react-native';
 
+import {Loading} from './src/components/loading';
+
+import styled from 'styled-components/native';
+
 import {QueryClient, QueryClientProvider} from 'react-query';
 
 LogBox.ignoreLogs(['Setting a timer']);
@@ -30,7 +34,8 @@ const UserList = () => {
             useNativeDriver: true,
           },
         )}>
-        <Animated.View
+        <AnimatedViewStyled
+          elevation={2}
           style={[
             styles.hint,
             {
@@ -53,7 +58,9 @@ const UserList = () => {
             },
           ]}>
           <Text style={styles.fontFamily}>Activated</Text>
-        </Animated.View>
+        </AnimatedViewStyled>
+
+        <Loading />
       </Animated.ScrollView>
     </SafeAreaView>
   );
@@ -70,6 +77,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
+    backgroundColor: 'white',
   },
   scrollView: {
     flex: 1,
@@ -77,11 +85,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   hint: {
-    borderColor: 'red',
-    borderWidth: StyleSheet.hairlineWidth,
     padding: 10,
     borderRadius: 5,
   },
 });
+
+type ViewStyledProps = {
+  elevation?: number;
+};
+
+const AnimatedViewStyled = styled(Animated.View)<ViewStyledProps>`
+  box-shadow: ${({elevation = 10}) => `0 0 ${elevation}px rgba(0, 0, 0, 0.2)`};
+  background-color: white;
+`;
+
+AnimatedViewStyled.displayName = 'Hello';
 
 export default App;
